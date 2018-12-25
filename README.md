@@ -180,10 +180,14 @@ Mutual exclusion is the basic idea of the problem; the dining philosophers creat
 
 This Experiment is a good practial for `semaphore` and `pthread`. The method which can avoid Deadlock is assigned at [wiki](http://en.wikipedia.org/wiki/Dining_philosophers_problem). It didnot cost me a lot of time to undertand the problem, either coding. Most time is costed at learning how `makefile works` and install `unbuntu in win10`. After the environment is down and the problem is clear, Coding performed pretty fast.
 
+## Aknowledge
+
+Thanks for Teaching of Professor [Mingsong Chen](https://faculty.ecnu.edu.cn/s/223/main.jspy) this semester. I love his talk show on class.
+
 ## Reference
 
 - [Dining philosophers](http://en.wikipedia.org/wiki/Dining_philosophers_problem)
-- [使用信号量解决哲学家饥饿问题](https://blog.csdn.net/kwinway/article/details/79884088)
+- [Philosopher Starving Problem by Semaphere](https://blog.csdn.net/kwinway/article/details/79884088)
 - [WayKwin/LittleExercise](https://github.com/WayKwin/LittleExercise/tree/master/PV)
 - [semaphore.h - semaphores (REALTIME)](http://pubs.opengroup.org/onlinepubs/7908799/xsh/semaphore.h.html)
 
