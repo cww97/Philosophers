@@ -178,7 +178,7 @@ Resource starvation might also occur independently of deadlock if a particular p
 
 Mutual exclusion is the basic idea of the problem; the dining philosophers create a generic and abstract scenario useful for explaining issues of this type. The failures these philosophers may experience are analogous to the difficulties that arise in real computer programming when multiple programs need exclusive access to shared resources. These issues are studied in concurrent programming. The original problems of Dijkstra were related to external devices like tape drives. However, the difficulties exemplified by the dining philosophers problem arise far more often when multiple processes access sets of data that are being updated. Complex systems such as operating system kernels use thousands of locks and synchronizations that require strict adherence to methods and protocols if such problems as deadlock, starvation, and data corruption are to be avoided.
 
-This Experiment is a good practial for `semaphore` and `pthread`. The method which can avoid Deadlock is assigned at [wiki](http://en.wikipedia.org/wiki/Dining_philosophers_problem). It didnot cost me a lot of time to undertand the problem, either coding. Most time is costed at learning how `makefile works` and install `unbuntu in win10`. After the environment is down and the problem is clear, Coding performed pretty fast.
+This Experiment is a good practise for `semaphore` and `pthread`. The method which can avoid Deadlock is assigned at [wiki](http://en.wikipedia.org/wiki/Dining_philosophers_problem). It didnot cost me a lot of time to undertand the problem, either coding. Most time is costed at learning how `makefile works` and install `unbuntu in win10`. After the environment is down and the problem is clear, Coding performed pretty fast.
 
 ## Aknowledge
 
@@ -193,10 +193,10 @@ Thanks for Teaching of Professor [Mingsong Chen](https://faculty.ecnu.edu.cn/s/2
 
 ## Appendix
 
-submit: homeworkecnu@163.com
+Submit: homeworkecnu@163.com
 
 - source code(comment key codes)
 - `makefile`
 - .zip
 
-opensorce: [gitbhub](https://github.com/cww97/Philosophers)
+Opensorce: [github](https://github.com/cww97/Philosophers)
