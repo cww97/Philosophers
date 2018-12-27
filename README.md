@@ -226,6 +226,4 @@ homeworkecnu@163.com
 - `makefile`
 - .zip
 
-Opensorce: [github](https://github.com/cww97/Philosophers)
-
-
+Opensorce: https://github.com/cww97/Philosophers
