@@ -2,7 +2,7 @@
 
 Parallel Programming-Project 2 (Mingsong Chen 2018 Autumn)
 
-Weiwen Chen 10152510217
+Weiwen Chen 10152510217@stu.ecnu.edu.cn
 
 ## Problem Description
 
@@ -153,6 +153,8 @@ void philosopher_method2(long idx){
 
 ## Experimental Result
 
+Our experiment environment is Windows Subsystem Linux(WSL), Ubuntu-64.
+
 ![deadlock](/doc/deadlock.jpg)
 
 This is the part result of `./philosophoer -normal -n 5`. Obiviousy we can observe a deadlock.
@@ -190,13 +192,40 @@ Thanks for Teaching of Professor [Mingsong Chen](https://faculty.ecnu.edu.cn/s/2
 - [Philosopher Starving Problem by Semaphere](https://blog.csdn.net/kwinway/article/details/79884088)
 - [WayKwin/LittleExercise](https://github.com/WayKwin/LittleExercise/tree/master/PV)
 - [semaphore.h - semaphores (REALTIME)](http://pubs.opengroup.org/onlinepubs/7908799/xsh/semaphore.h.html)
+- [Oracle Solaris Studio: Deadlock](https://docs.oracle.com/cd/E19205-01/821-2514/geosb/index.html)
 
 ## Appendix
 
-Submit: homeworkecnu@163.com
+### OpenMP
+
+Prof Mingsong Chen is right. After done with `Pthread`. I only need to change 2 lines.
+
+I deleted all codes about `phthread` and changed `openMP` sentense like this:
+
+```c
+    // init philosophers (pthread), and then begin ♂
+    #pragma omp parallel num_threads(phi_cnt)
+    dark_deep_fantasy();
+```
+
+And in `deep_dark_fantasy()`, one line:
+
+```c
+    long rnk = (int)omp_get_thread_num();
+```
+
+Mingsong HAOSHUAI! Rua!
+
+The codes is in `philosopher_omp.c`.
+
+### Submit
+
+homeworkecnu@163.com
 
 - source code(comment key codes)
 - `makefile`
 - .zip
 
 Opensorce: [github](https://github.com/cww97/Philosophers)
+
+

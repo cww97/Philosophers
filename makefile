@@ -1,9 +1,11 @@
 .PHONEY:clean
 
-ALL: philosopher 
-RM_OBJ = philosopher
+ALL: philosopher_omp 
+RM_OBJ = philosopher_omp
 
-philosopher : comm.c philosopher.c 
+philosopher_omp : philosopher_omp.c 
+	gcc -fopenmp $^ -o $@
+philosopher : philosopher.c 
 	gcc -pthread $^ -o $@
 clean:
 	rm -rf $(RM_OBJ)
